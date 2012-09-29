@@ -1,0 +1,16 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.3.2)
+    css_parser (1.2.6)
+      addressable
+      rdoc
+    json (1.7.5)
+    rdoc (3.12)
+      json (~> 1.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  css_parser
