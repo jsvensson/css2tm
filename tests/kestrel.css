@@ -1,0 +1,68 @@
+#theme {
+  name: Kestrel;
+}
+#settings {
+  background: #2b2b2b;
+  caret: #999999;
+  foreground: #e6e1dc;
+  invisibles: #404040;
+  linehighlight: #333435;
+  selection: #5a647ee0;
+}
+comment {
+  name: Comment;
+  fontstyle: italic;
+  foreground: #a0a0a0;
+}
+string {
+  name: String;
+  foreground: #a5c261;
+}
+string.regexp {
+  name: Regular expression;
+  background: #e6e1dc 22;
+}
+punctuation.definition.string {
+  name: String punctuation;
+  foreground: #d0d0ff;
+}
+constant.character.escape {
+  name: Escape character;
+  foreground: #d3201f;
+}
+constant.other.rgb-value {
+  name: RGB value;
+  foreground: #6d9cbe;
+}
+meta.tag,
+declaration.tag,
+entity.name.tag,
+entity.other.attribute-name {
+  name: Markup tag;
+  foreground: #e8bf6a;
+}
+punctuation.definition.tag {
+  name: Markup declaration;
+  foreground: #bc9458;
+}
+entity.other.attribute-name {
+  name: Markup tag attribute name;
+  foreground: #a5c261;
+}
+keyword.control {
+  name: Control keyword;
+  foreground: #cc7833;
+}
+entity.name.type.class,
+entity.name.type.module {
+  name: Class and module name;
+  foreground: #da4939;
+}
+entity.other.inherited-class {
+  name: Inherited class;
+  fontstyle: italic;
+}
+support.class {
+  name: Support class;
+  foreground: #bc9458;
+}

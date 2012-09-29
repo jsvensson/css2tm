@@ -1,5 +1,112 @@
+// Colors
+
+	@text-red1: #d3201f;
+	@text-red2: #da4939;
+
+	@text-green: #a5c261;
+
+	@text-blue1: #5a647e;
+	@text-blue2: #6d9cbe;
+	@text-blue3: #d0d0ff;
+
+	@text-brown1: #cc7833;
+	@text-brown2: #bc9458;
+	@text-brown3: #e8bf6a;
+	@text-brown4: #ffc66d;	
+
+// Text background
+	@background-inline-code: #e6e1dc22;
+
+
+#theme {
+  name: Kestrel;
+}
+
+#settings {
+  background: #2b2b2b;
+  caret: #999999;
+  foreground: #e6e1dc;
+  invisibles: #404040;
+  linehighlight: #333435;
+  selection: #5a647ee0;
+}
+
 comment {
-	name: Comment;
-	fontStyle: italic;
-	foreground: #a0a0a0;
+  name: Comment;
+  fontstyle: italic;
+  foreground: #a0a0a0;
+}
+
+string {
+  name: String;
+  foreground: @text-green;
+}
+
+string.regexp {
+  name: Regular expression;
+  background: @background-inline-code;
+}
+
+punctuation.definition.string {
+  name: String punctuation;
+  foreground: #d0d0ff;
+}
+
+constant.character.escape {
+  name: Escape character;
+  foreground: @text-red1;
+}
+
+// Integers, RGB values, other digits
+
+constant.other.rgb-value {
+	name: RGB value;
+	foreground: @text-blue2;
+}
+
+// Markup tags
+
+meta.tag,
+declaration.tag,
+entity.name.tag,
+entity.other.attribute-name {
+	name: Markup tag;
+	foreground: @text-brown3;
+}
+
+punctuation.definition.tag {
+	name: Markup declaration;
+	foreground: @text-brown2;
+}
+
+entity.other.attribute-name {
+	name: Markup tag attribute name;
+	foreground: @text-green;
+}
+
+// Code fundamentals
+// * Control keywords
+// * Class definition
+// * Inherited class
+
+keyword.control {
+	name: Control keyword;
+	foreground: @text-brown1;
+}
+
+entity.name.type.class,
+entity.name.type.module {
+	name: Class and module name;
+	foreground: @text-red2;
+}
+
+entity.other.inherited-class {
+	name: Inherited class;
+	fontstyle: italic;
+
+}
+
+support.class {
+	name: Support class;
+	foreground: @text-brown2;
 }
