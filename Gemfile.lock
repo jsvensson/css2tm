@@ -6,6 +6,7 @@ GEM
       addressable
       rdoc
     json (1.7.5)
+    plist (3.1.0)
     rdoc (3.12)
       json (~> 1.4)
 
@@ -14,3 +15,4 @@ PLATFORMS
 
 DEPENDENCIES
   css_parser
+  plist
