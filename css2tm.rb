@@ -2,7 +2,16 @@ require "rubygems"
 require "bundler/setup"
 Bundler.require :default
 
-Dir["./lib/*.rb"].each { |f| require f }
+# Build hash list out of CSS declarations
+def split_declarations(dec)
+	dec = dec.split(/; ?/)
+	list = {}
+	dec.each do |d|
+		pair = d.split(/: ?/)
+		list[pair[0].to_sym] = pair[1]
+	end
+	list
+end
 
 parser = CssParser::Parser.new
 
@@ -13,17 +22,17 @@ theme = {
 }
 
 # Build theme settings
-themename = SplitDeclarations.split(parser.find_by_selector('#theme').first)
+themename = split_declarations(parser.find_by_selector('#theme').first)
 theme.merge!(themename)
 
 settings = {}
-settings[:settings] = SplitDeclarations.split(parser.find_by_selector('#settings').first)
+settings[:settings] = split_declarations(parser.find_by_selector('#settings').first)
 theme[:settings] << settings
 
 parser.each_selector do |selector, declaration, specificity|
 	next if (selector == '#theme' or selector == '#settings')
 
-	h = SplitDeclarations.split(declaration)
+	h = split_declarations(declaration)
 
 	# Build the selector hash
 	selhash = {
