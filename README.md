@@ -25,7 +25,7 @@ A couple of id selectors are used for theme configuration: `#theme` and `#settin
 
 `#theme` contains nothing but the property `name` with your theme name as its value.
 
-```
+``` css
 #theme {
   name: Your Theme Name;
 }
@@ -34,20 +34,20 @@ A couple of id selectors are used for theme configuration: `#theme` and `#settin
 
 `#settings` contains the basic color attributes for your theme:
 
-```
+``` css
 #settings {
   background: #2b2b2b;
   caret: #999999;
   foreground: #e6e1dc;
   invisibles: #404040;
   lineHighLight: #333435;
-  selection: #5a647ee0; 
+  selection: #5a647ee0;
 }
 ```
 
 Everything else is written like a standard CSS tag selector, with the scope for your theme being the selector:
 
-```
+``` css
 comment {
   name: Comment;
   fontStyle: italic;
