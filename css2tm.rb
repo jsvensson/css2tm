@@ -13,9 +13,17 @@ def split_declarations(dec)
 	list
 end
 
-parser = CssParser::Parser.new
+# Set up args
+infile = ARGV[0]
+outfile = ARGV[1]
 
-parser.load_file!('tests/kestrel.css')
+if !infile then
+	puts "No input!"
+	exit
+end
+
+parser = CssParser::Parser.new
+parser.load_file!(infile)
 
 theme = {
 	settings: []
@@ -48,5 +56,4 @@ parser.each_selector do |selector, declaration, specificity|
 
 end
 
-#puts theme
-puts theme.to_plist
+puts theme
