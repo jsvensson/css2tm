@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem "css_parser"
-gem "plist"
+gem 'css_parser'
+gem 'plist'
