@@ -56,4 +56,4 @@ parser.each_selector do |selector, declaration, specificity|
 
 end
 
-puts theme
+puts theme.to_plist
