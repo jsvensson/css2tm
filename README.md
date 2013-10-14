@@ -79,7 +79,7 @@ Be warned: the `.tmTheme` format likes to engage in random acts of camelCase. Al
 
 ## Known bugs ##
 
-* `fontStyle` or any other attribute with uppercase letters do not work, because whoever made the `.tmTheme` format thought camelCase was an awesome idea (it isn't) and the theme format (at least when parsed by ST2) is case-sensitive. The CSS parser gem for ruby, bless its infinite wisdom, chooses to mess with what I write and turn all attributes into downcase. May have to fork the gem and ship this with a tweaked version.
+* `fontStyle` or any other attribute with uppercase letters do not work, because whoever made the `.tmTheme` format thought camelCase was an awesome idea (it isn't) and the theme format (at least when parsed by ST2) is case-sensitive. The CSS parser gem for ruby, bless its infinite wisdom, chooses to mess with what I write and turn all attributes into downcase.
 
 ## To do ##
 
