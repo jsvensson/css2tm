@@ -1,6 +1,6 @@
 # CSS to TextMate theme parser #
 
-How long did it take you to get tired of writing a `.tmTheme` file by hand? If it was more than ten minutes then you are a stronger man than I.
+How long did it take you to get tired of writing a `.tmTheme` file by hand? If it was more than ten minutes then you are a stronger person than I am.
 
 Since the scope selector way of theming TextMate and Sublime Text 2 fits CSS like a glove, I decided to write a little something that lets me write a theme in CSS (actually, I write it in [LESS][less]) and then convert that to a `.tmTheme` file that I never have to look at again.
 
